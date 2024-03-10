@@ -12,10 +12,10 @@ const Navigation = [
 
 export default function Navbar() {
   return (
-    <div className="bottom-3 sticky w-full">
-      <div className="mx-auto max-w-sm sm:max-w-xl">
+    <div className="bottom-0 sticky w-full">
+      <div className="mx-auto max-w-[28rem]">
         <div className="relative flex h-16 justify-between">
-          <div className="flex flex-1 border bg-white rounded-md items-center justify-center sm:items-stretch">
+          <div className="flex flex-1 border bg-white rounded-sm items-center justify-center sm:items-stretch">
             <div className="space-x-10 sm:flex">
               {Navigation.map((item, idx) => (
                 <Link

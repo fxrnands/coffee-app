@@ -13,12 +13,13 @@ const BestProduct = () => {
       return Third;
     }
   };
+
   return (
     <div className="flex space-x-3.5">
       {ProductData.slice(0, 3).map((item, index) => (
-        <div key={index} className="border shadow-md rounded-md p-3">
-          <div className="w-[92px] flex relative items-center overflow-hidden h-[92px]">
-            <Image src={badge(index)} className="absolute top-0" alt="" />
+        <div key={index} className="border relative shadow-md rounded-md p-3">
+          <Image src={badge(index)} className="absolute top-1 left-1" alt="" />
+          <div className="w-[92px] flex  items-center overflow-hidden h-[92px]">
             <Image
               src={item.image}
               width={1000}
@@ -27,10 +28,13 @@ const BestProduct = () => {
               className="object-cover object-center h-full w-full"
             />
           </div>
-          <p className="font-bold text-center text-sm pt-2">
-            {item.productName}
+          <p className="text-center text-sm pt-2">{item.productName}</p>
+          <p className="text-sm pt-1 text-center font-bold text-[16px]">
+            Rp{item.price.toLocaleString("ko-KR")}
           </p>
-          <p className="text-sm pt-1 text-center text-gray-400">{item.price}</p>
+          <p className="text-gray-400 text-center mt-3 text-[10px]">
+            {item.sold} sold
+          </p>
         </div>
       ))}
     </div>

@@ -9,24 +9,28 @@ import { NextPage } from "next";
 import { ImageSlider } from "@/utils/dummy";
 import { Arrow } from "@/assets";
 import Image from "next/image";
+import React from "react";
 
 const Index: NextPage = () => {
   return (
     <>
-      <Carousel item={ImageSlider} />
-      <div className="mt-4 max-w-sm mx-auto">
-        <h1 className="font-bold text-lg">Search Products</h1>
-        <Search />
+      <div className={`sticky top-0 z-10`}>
+        <div className={`bg-[#503C3C] py-5 px-5 `}>
+          <Search />
+        </div>
       </div>
-      <div className="bg-gray-100 pt-4 pb-6 mt-6">
+      <div className={`bg-gray-100 pt-6 pb-6`}>
         <div className="max-w-sm mx-auto">
-          <h1 className="font-bold text-lg mb-4">Mega Discount</h1>
+          <h1 className="font-bold text-[20px] mb-4">Mega Discount</h1>
           <PromoSlider item={ImageSlider} />
         </div>
       </div>
       <div className="max-w-sm mx-auto mt-6">
-        <h1 className="font-bold text-lg mb-4">Best Seller</h1>
+        <h1 className="font-bold text-[20px] mb-4">Best Seller</h1>
         <BestProduct />
+      </div>
+      <div className="mt-6">
+        <Carousel item={ImageSlider} />
       </div>
       <div className="max-w-sm mx-auto mt-8">
         <div className="flex items-center  mb-4 justify-between">
@@ -36,7 +40,7 @@ const Index: NextPage = () => {
             height={10}
             className="h-5 w-5"
             width={10}
-            alt=""
+            alt="more-product"
           />
         </div>
         <ProductList />
