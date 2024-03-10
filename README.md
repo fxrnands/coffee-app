@@ -5,7 +5,7 @@
 To get started, run:
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Final Steps
