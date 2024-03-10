@@ -4,6 +4,7 @@ export default class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
+        <title>Coffee App</title>
         <Head></Head>
         <body>
           <Main />

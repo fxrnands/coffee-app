@@ -1,10 +1,15 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
+import { Navbar } from "@/components/base";
+import MainLayout from "./MainLayout";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <Component {...pageProps} />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+      <Navbar />
     </>
   );
 };
