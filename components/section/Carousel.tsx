@@ -54,11 +54,12 @@ const Slider = ({ item }: Props) => {
       draggable={true}
       responsive={responsive}
       showDots={false}
-      arrows={true}
+      arrows={false}
+      className="max-w-[28rem] mx-auto"
     >
       {item.map((item, index) => (
         <div key={index} className="flex flex-col items-center">
-          <div className="w-full h-full overflow-hidden flex items-center border">
+          <div className="w-full h-[14rem] overflow-hidden flex items-center border">
             <Image
               src={item.image}
               alt={item.image}

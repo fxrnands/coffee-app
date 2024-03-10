@@ -17,13 +17,15 @@ const ProductList = () => {
               className="object-cover object-center h-full w-full"
             />
           </div>
-          <p className="font-bold text-sm pt-2">{item.productName}</p>
+          <p className="text-sm pt-2">{item.productName}</p>
           {item.stock === 0 ? (
             <p className="pt-8 font-bold text-center text-gray-400">
               Out of Stock
             </p>
           ) : (
-            <p className="text-sm pt-1 text-gray-400">{item.price}</p>
+            <p className="text-sm pt-1 font-bold text-[16px]">
+              Rp{item.price.toLocaleString("ko-KR")}
+            </p>
           )}
           {item.stock > 0 && (
             <button className="bg-white text-black shadow-md items-center px-2 flex py-2 font-bold text-[10px] gap-1 w-full rounded-full mt-2">

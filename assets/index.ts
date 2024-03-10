@@ -10,3 +10,5 @@ export { default as Second } from "./icons/Second.svg";
 export { default as Third } from "./icons/Third.svg";
 export { default as Arrow } from "./icons/Arrow.svg";
 export { default as ShoppingBag } from "./icons/ShoppingBag.svg";
+export { default as Coffee } from "./dummy/Coffee.webp";
+export { default as PromoCoffee } from "./dummy/PromoCoffee.webp";
