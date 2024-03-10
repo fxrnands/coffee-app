@@ -1,6 +1,6 @@
-# coffee-app
+# Coffee App
 
-🎉 Congratulations, your project was successfully generated with [Create Next Stack](https://www.create-next-stack.com/)!
+🎉 This project was successfully generated with [Create Next Stack](https://www.create-next-stack.com/)!
 
 To get started, run:
 
@@ -8,19 +8,11 @@ To get started, run:
 yarn dev
 ```
 
-## Final Steps
-
-There are a few final steps that we were not able to perform automatically. We have provided a complete list for you below. You should take care of these before you can start developing your project. You can delete each item from the list as you go along.
-
-### To do:
-
-- Integrate Vercel with your repository host for continuous deployments at https://vercel.com/new
-
 ## Scripts
 
 The table below provides names and descriptions of the npm scripts available in this project.
 
-Each script is run using `npm run <script-name>`. For example: `npm run dev`.
+Each script is run using `yarn <script-name>`. For example: `yarn dev`.
 
 | Name            | Description                                                                                                                                                                                                                                     |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
