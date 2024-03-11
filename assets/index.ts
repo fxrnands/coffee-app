@@ -1,8 +1,3 @@
-export { default as Home } from "./icons/Home.svg";
-export { default as Coupon } from "./icons/Coupon.svg";
-export { default as Order } from "./icons/Order.svg";
-export { default as Ellipsis } from "./icons/Ellipsis.svg";
-export { default as Bell } from "./icons/Bell.svg";
 export { default as Search } from "./icons/Search.svg";
 export { default as Dummy } from "./dummy.svg";
 export { default as First } from "./icons/First.svg";
@@ -12,3 +7,4 @@ export { default as Arrow } from "./icons/Arrow.svg";
 export { default as ShoppingBag } from "./icons/ShoppingBag.svg";
 export { default as Coffee } from "./dummy/Coffee.webp";
 export { default as PromoCoffee } from "./dummy/PromoCoffee.webp";
+export { default as BackgroundCoffee } from "./dummy/coffee-background.webp";
