@@ -7,7 +7,7 @@ const ProductList = () => {
   return (
     <div className="grid grid-cols-3 gap-2">
       {ProductData.slice(0, 10).map((item, index) => (
-        <div key={index} className="border shadow-md rounded-md p-3">
+        <div key={index} className="border bg-white shadow-md rounded-md p-3">
           <div className="w-[6rem] flex items-center overflow-hidden h-[6rem]">
             <Image
               src={item.image}

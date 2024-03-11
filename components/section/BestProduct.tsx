@@ -17,7 +17,10 @@ const BestProduct = () => {
   return (
     <div className="flex space-x-3.5">
       {ProductData.slice(0, 3).map((item, index) => (
-        <div key={index} className="border relative shadow-md rounded-md p-3">
+        <div
+          key={index}
+          className="border bg-white relative shadow-md rounded-md p-3"
+        >
           <Image src={badge(index)} className="absolute top-1 left-1" alt="" />
           <div className="w-[92px] flex  items-center overflow-hidden h-[92px]">
             <Image

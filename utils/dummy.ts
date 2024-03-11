@@ -1,4 +1,4 @@
-import { Coffee, Dummy, PromoCoffee } from "@/assets";
+import { Coffee, PromoCoffee } from "@/assets";
 
 export const ProductData = [
   {
